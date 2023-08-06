@@ -9,7 +9,7 @@ const app=express();
  app.use(express.json())
 app.use(cors())
 
-app.post('/payment',async(req,res)=>{
+app.post('/',async(req,res)=>{
     try{
  
         const {amount}=req.body;
@@ -31,5 +31,5 @@ app.post('/payment',async(req,res)=>{
 })
 
  app.listen(Port,()=>{
-    console.log('Listening on port 8080')
+    console.log('Listening on port 8000')
  })
